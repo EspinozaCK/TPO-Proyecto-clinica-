@@ -1,0 +1,62 @@
+/*Turnero*/
+nav {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    /*background-color: var(--bg-color);*/
+    background-color: rgb(4, 94, 94);
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+  }
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.turnero-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#confirmacion {
+    margin-top: 20px;
+    color: #27ae60;
+    font-weight: bold;
+}

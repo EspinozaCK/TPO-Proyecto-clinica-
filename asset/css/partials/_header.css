@@ -1,0 +1,45 @@
+/* NavBar*/
+nav {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    background-color: var(--bg-color);
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+  }
+  
+  nav h1 {
+    color: var(--primary-color);
+  }
+  
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  
+  .menu-burguer {
+    display: none;
+  }
+  
+  label {
+    cursor: pointer;
+  }
+  
+  /*MEDIA QUERY PARA QUE EL BLOQUE DE CODIGO CSS SEA RESPONSIVE*/
+  @media screen and (max-width: 720px) {
+    .menu-burguer {
+      display: block;
+    }
+  
+    nav ul {
+      position: fixed;
+      flex-direction: column;
+      top: 86px;
+      width: 90%;
+      background-color: var(--bg-color);
+    }
+  }
+  
