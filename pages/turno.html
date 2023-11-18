@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/logoWeb.ico">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        nav {
+            position: sticky;
+            top: 0px;
+            left: 0px;
+            display: flex;
+            background-color: rgb(4, 94, 94);
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 40px;
+        }
+
+        .turnero-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        #confirmacion {
+            margin-top: 20px;
+            color: #27ae60;
+            font-weight: bold;
+        }
+    </style>
+    <title>Turnero</title>
+</head>
+<body>
+    <nav>
+        <a class="navbar-logo" href="#">
+            <img src="img/LitioLab.png" class="img-thumbnail">
+          </a>
+        <ul class="animate__animated animate__backInDown">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="./turno.html">turnero</a></li>
+            <li><a href="./pages/projects.html">Pacientes</a></li>
+            <li><a href="/pages/contact.html">Turnos</a></li>
+            <li><a href="./pages/contact.html">Coctacto</a></li>
+        </ul>
+        <button class="menu-burguer">
+            <label id="menu-icon" >|||</label>
+        </button>
+    </nav>
+    <div class="turnero-form">
+        <h2>Formulario de Turnero</h2>
+        <form id="turneroForm" method="post" action="{{ url_for('guardar_turno') }}">
+        <!--<form id="turneroForm">-->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" required>
+
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" required>
+
+            <label for="dia">Día:</label>
+            <input type="date" id="dia" required>
+
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" required>
+
+            <button class="turnero" type="button" onclick="agendarTurno()">Agendar Turno</button>
+        </form>
+
+        <div id="confirmacion"></div>
+    </div>
+
+    <script src="turnero.js"></script>
+</body>
+</html>
