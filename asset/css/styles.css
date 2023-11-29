@@ -1,3 +1,4 @@
+
 p{
     color:rgb(11, 83, 83);
 }
@@ -71,7 +72,7 @@ nav {
   left: 0px;
   display: flex;
   /*background-color: var(--bg-color);*/
-  background-color: aqua;
+  background-color: rgb(7, 90, 90);
   align-items: center;
   justify-content: space-between;
   padding: 20px 40px;
@@ -107,13 +108,14 @@ label {
     top: 86px;
     width: 90%;
     background-color: var(--bg-color);
+    color:aliceblue;
   }
 }
 /*logo*/
 .navbar-logo{
   display: inline-block;
   vertical-align: middle;
-  width: 70px;
+  width: 95px;
 }
 /*botones*/
 button {
@@ -127,4 +129,107 @@ button {
   margin-right: 10px;
   margin-bottom: 15px;
 }
+.banners-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+}
 
+.info {
+  flex: 1 1 30%; /* crecimiento, contracción, tamaño inicial */
+  max-width: 300px;
+  text-align: center;
+}
+
+.banner-img {
+  width: 100%;
+  height: auto;
+  min-width: 300px; /* Tamaño mínimo de la imagen */
+  border-radius: 8px; /* Bordes redondeados para la imagen */
+}
+@media screen and (max-width: 600px) {
+  .banners-container {
+      flex-direction: column;
+  }
+}
+/*acá el estilo del formulario*/
+form {
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente para resaltar el formulario */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+form label,
+form textarea,
+form select,
+form input[type="submit"] {
+  margin-bottom: 10px;
+}
+
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form input[type="submit"] {
+  background-color: #4CAF50; /* Color de fondo para el botón enviar */
+  color: white;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+/*Footer*/
+  /* Estilo y color del pie de página adhesivo */
+  .footer-container {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.footer{
+  color: rgb(13, 134, 155);
+}
+.columna-pie {
+    flex: 1 1 30%; /* crecimiento, contracción, tamaño inicial */
+    margin: 10px;
+    max-width: 300px;
+}
+
+h4 {
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.image-container {
+  width: 100%;
+  height: 200px; /* Establece la altura deseada para las imágenes */
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la propiedad object-fit según tus necesidades */
+}

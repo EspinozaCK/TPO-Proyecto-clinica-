@@ -1,10 +1,11 @@
 /* NavBar*/
+
 nav {
     position: sticky;
     top: 0px;
     left: 0px;
     display: flex;
-    background-color: var(--bg-color);
+    background-color: rgb(7, 90, 90);
     align-items: center;
     justify-content: space-between;
     padding: 20px 40px;
@@ -18,6 +19,7 @@ nav {
     display: flex;
     flex-direction: row;
     gap: 40px;
+    color: aliceblue;
   }
   
   .menu-burguer {
@@ -29,7 +31,7 @@ nav {
   }
   
   /*MEDIA QUERY PARA QUE EL BLOQUE DE CODIGO CSS SEA RESPONSIVE*/
-  @media screen and (max-width: 720px) {
+@media screen and (max-width: 720px) {
     .menu-burguer {
       display: block;
     }
@@ -42,4 +44,31 @@ nav {
       background-color: var(--bg-color);
     }
   }
-  
+ /*logo*/
+.navbar-logo{
+  display: inline-block;
+  vertical-align: middle;
+  width: 95px;
+} 
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #3498db; /* Puedes cambiar el color según tus preferencias */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+.banners-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+}
+ 
