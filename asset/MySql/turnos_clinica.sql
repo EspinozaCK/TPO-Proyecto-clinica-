@@ -12,3 +12,5 @@ CREATE TABLE IF NOT EXISTS turnos (
     modify especialidad enum ('Neurología','Odontología','Psicoloía','Dermatología','Podología','Ortodoncia','Pediatría','Cardiología','Ginecología') not null;
     alter table turnos
     modify especialidad enum ('Neurología','Odontología','Psicoloía','Dermatología','Podología','Ortopedia','Pediatría','Cardiología','Ginecología') not null ;
+    alter table turnos
+    modify especialidad varchar(50);

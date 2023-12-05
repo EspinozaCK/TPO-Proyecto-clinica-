@@ -2,3 +2,4 @@
 # commit correcion de direccionamientos
 # se agrego contactos , turno , se modifico menus, footer
 # se agrego a contactos funcionalidad de envio de correo
+# turnero con BD 
